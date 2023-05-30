@@ -10,7 +10,7 @@ export const ButtonStyle = css`
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight:500;
-  svg{
+  svg {
     height: 16px;
     margin-right: 5px;
   }
@@ -39,12 +39,12 @@ export const ButtonStyle = css`
   ${props => props.primary && ! props.outline && css`
     background-color: ${primary};
     border: 1px solid ${primary};
-    color:#fff;
+    color: #fff;
   `}
   ${props => props.primary && props.outline && css`
     background-color: transparent;
     border: 1px solid ${primary};
-    color:${primary};
+    color: ${primary};
   `}
   ${props => props.size === 'l' && css`
     font-size:1.2rem;
@@ -57,7 +57,7 @@ export const ButtonStyle = css`
 const StyledButton = styled.button`
   ${ButtonStyle}
 `;
-export default function Button({children,...rest}){
+export default function Button({children, ...rest}){
   return(
     <StyledButton {...rest}>
 			{children}

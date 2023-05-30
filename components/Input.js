@@ -8,5 +8,5 @@ const StyledInput = styled.input`
   box-sizing:border-box;
 `;
 export default function Input(props){
-  return <StyledInput{...props}/>
+  return <StyledInput {...props}/>
 };

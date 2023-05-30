@@ -35,11 +35,11 @@ export default function ProductImages({images}){
   return(
     <>
       <BigImageWrapper>
-        <BigImage src = {activeImage} />
+        <BigImage src = {activeImage}/>
       </BigImageWrapper>
       <ImageButtons>
         {images.map(image => (
-          <ImageButton key = {image} active = {image===activeImage} onClick = {() => setActiveImage(image)}>
+          <ImageButton key = {image} active = {image === activeImage} onClick = {() => setActiveImage(image)}>
             <Image src = {image} alt = ""/>
           </ImageButton>
         ))}
